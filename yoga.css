@@ -5,8 +5,9 @@ color: #40407A;
 font-family: Verdana, Arial, sans-serif;
 margin: 0;
 }
-#wrapper { background-color: #F5F5F5;
-    	   padding: 2em; 
+#wrapper { 
+background-color: #F5F5F5;
+padding: 2em; 
 }
 header { 
 background-color: #40407A;
