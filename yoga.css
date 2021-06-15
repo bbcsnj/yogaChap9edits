@@ -1,143 +1,139 @@
 * { box-sizing: border-box; }
 body { 
-background-color: #90C7E3;
-color: #666666;
+background-color: #3F2860;
+color: #40407A;
 font-family: Verdana, Arial, sans-serif;
 margin: 0;
 }
-#wrapper { background-color: #FFFFFF; }
+#wrapper { 
+background-color: #F5F5F5;
+padding: 2em; 
+}
 header { 
-background-color: #002171;
-color: #FFFFFF;
-font-family: Georgia, serif;
-padding: 1em;
+background-color: #40407A;
+background-image: url(sunrise.jpg);
+background-size: 100% 100%; 
+color: #FFF;
+font-size: 90%;
+margin-top: 50px;
+min-height: 200px;
 }
 header a { text-decoration: none; }
-header a:link       { color: #FFFFFF; }
-header a:visited { color: #FFFFFF; }
-header a:hover     { color: #90C7E3; }
-h1 {  
-font-size: 1.5em;
-text-align: center;
+header a:link       { color: #FFF; }
+header a:visited { color: #FFF; }
+header a:hover    { color: #EDF5F5; }
+.home, .content { 
+height: 20vh;
+padding-left: 10%;
+padding-top: 2em; 
 }
-h2 { 
-color: #1976D2;
-font-family: Georgia, serif; 
-}
-h3 { font-family: Georgia, serif; }
 nav { 
 background-color: #FFF;
-font-size: 1.2em;
-text-align: center;
+position: fixed;
+left: 0;
+top: 0;
+margin: 0;
+padding: 0.5em 0 1em 1em;
+text-align: right;
+width: 100%;
+z-index: 9999;
 }
-nav a { text-decoration: none; }
-nav a:link       { color: #5C7FA3; }
-nav a:visited { color: #344873; }
-nav a:hover     { color: #A52A2A; }
+nav a { 
+display: block;
+text-decoration: none; 
+}
+nav a:link { color: #3F2860; }
+nav a:visited { color: #497777; }
+nav a:hover { color: #A26100;  }
 nav ul { 
-display: flex;
-flex-direction: column;
+display: flex; 
+flex-flow: row wrap;
+font-size: 1.2em;
 list-style-type: none; 
 margin: 0;
-padding: 0; 
 }
 nav li { 
-border-bottom: 1px solid #344873;
-padding: .5em 1em;
-width: 100%; 
-}
-main { 
-display: block; 
+display: inline;
 padding: 0 1em;
+width: 40%; 
 }
-dt { 
-color: #002171;
-font-weight: bold;
-}
-.resort { 
-color: #1976D2;
-font-size: 1.2em;
-}
-#homehero { 
-height: 300px;
-background-image: url(coast.jpg);
+#mathero { 
+background-image: url(yogamat.jpg);
 background-repeat: no-repeat;
-background-size: 200% 100%; 
-}
-#yurthero { 
+background-size: cover;
 height: 300px;
-background-image: url(yurt.jpg);
-background-repeat: no-repeat;
-background-size: 200% 100%; 
+display: none; 
 }
-#trailhero { 
+#loungehero { 
+background-image: url(yogalounge.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 height: 300px;
-background-image: url(trail.jpg);
-background-repeat: no-repeat;
-background-size: 200% 100%; 
+display: none; 
 }
-#mobile  { display: inline; }	
+#mobile { display: inline; }
 #desktop { display: none; }
-section {  
+.studio { font-style: italic; }
+section { 
 padding-left: .5em;
-padding-right: .5em;
-}			
-footer { 
-background-color: #FFF;
-font-size: .70em;
+padding-right: .5em; 
+}
+footer {   
+font-size: .60em;
 font-style: italic;
-padding: 1em;
-text-align: center;
+text-align: center; 
 }
 table { 
-margin: auto;
-width: 90%; 
-border-collapse: collapse; 
+width: 60%;
+margin: auto; 
+margin-bottom: 1em;
+border-collapse: collapse;
 }
 td, th { 
 padding: 5px;
-border: 1px solid #3399CC;  
+border: 1px solid #3F2860; 
 }
-td { text-align: center; }
-.text { text-align: left; }
-tr:nth-of-type(even) { background-color: #F5FAFC; }
+tr:nth-of-type(even) { background-color: #DBE8E9; }
+caption { 
+font-size: 120%;
+margin: 1em;
+font-weight: bold; 
+}
 @media (min-width: 600px) { 
-h1 { 
-font-size: 2em;
-letter-spacing: .25em;		
-}
 nav ul { 
-flex-flow: row nowrap; 
-justify-content: space-around;
-padding-right: 2em; 
+flex-flow: row nowrap;
+justify-content: flex-end; 
 }
-nav li { 
-border-bottom: none;
-width: 12em; 
-}
+nav li { width: 7em; }
 section { 
 padding-left: 2em;
 padding-right: 2em; 
 }
+#mathero, #loungehero { 
+display: block; 
+padding-bottom: 1em; 
+}
 #flow { 
-display: flex; 
+display: flex;
 flex-direction: row; 
 }
 #mobile { display: none; }
 #desktop { display: inline; }
-#homehero, #yurthero, #trailhero { background-size: 100% 100%; }
 }
 @media (min-width: 1024px) { 
-body { 
-background-image: 
-linear-gradient(to bottom, #FFFFFF 20%, #90C7E3 60%, #FFFFFF 100%);
+header { font-size: 120%; }
+.home { 
+height: 50vh;
+padding-left: 8em;
+padding-top: 5em;
 }
-nav ul { 
-padding-left: 10%;
-padding-right: 10%; 
+.content { 
+height: 30vh;
+padding-left: 8em;
+padding-top: 1em; 
 }
 #wrapper { 
 margin: auto;
 width: 80%; 
-}	
-}		/* REMEMBER THIS LAST BRACE */		  
+}
+}  /* REMEMBER THIS LAST BRACE */
